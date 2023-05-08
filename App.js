@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, KeyboardAvoidingView, Platform } from 'react-native';
 import RegistrationScreen from './Screens/RegistrationScreen';
-import FormRegister from './components/FormRegister';
+import LoginScreen from './Screens/LoginScreen';
 export default function App() {
   return (
     <KeyboardAvoidingView
@@ -9,6 +9,8 @@ export default function App() {
     style={styles.container}>
     <View >
       <RegistrationScreen/>
+      {/* <LoginScreen/> */}
+
     </View>
 </KeyboardAvoidingView>
 

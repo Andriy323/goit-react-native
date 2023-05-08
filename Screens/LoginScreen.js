@@ -11,9 +11,10 @@ import {
   ImageBackground,
   Keyboard,
 } from "react-native";
-import { regisetStyles } from "../styles/register-styles";
-import FormRegister from "../components/FormRegister";
-export default function RegistrationScreen() {
+
+import FormLogin from "../components/FormLogin";
+import { loginStyle } from "../styles/login-style";
+export default function LoginScreen() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View>
@@ -21,43 +22,27 @@ export default function RegistrationScreen() {
           source={require("../img/image/photo.jpg")}
           resizeMode="cover"
         >
-          <View style={regisetStyles.avatars}>
-            <Pressable style={regisetStyles.addAvatar}>
-              <AddPhotoSvg />
-            </Pressable>
-          </View>
-          <View style={regisetStyles.main}>
-            <Text style={regisetStyles.text}>Регистрация</Text>
-            <FormRegister />
+          <View style={loginStyle.main}>
+            <Text style={loginStyle.text}>Войти</Text>
+            <FormLogin />
           </View>
         </ImageBackground>
       </View>
     </TouchableWithoutFeedback>
   );
 }
-
 // const styles = StyleSheet.create({
-//   avatars: {
-//     marginTop: 175,
-//     marginLeft: 140,
-//     borderRadius: 16,
-//     position: "absolute",
-//     zIndex: 1,
-//     backgroundColor: "#F6F6F6",
-//     width: 120,
-//     height: 120,
-//   },
 //   main: {
 //     backgroundColor: "#FFFFFF",
 //     position: "relative",
-//     marginTop: 235,
+//     marginTop: 295,
 //     width: "100%",
-//     height: 549,
+//     height: 489,
 //   },
 //   text: {
 //     color: "#212121",
 //     fontSize: 30,
-//     marginTop: 92,
+//     marginTop: 32,
 //     marginLeft: "auto",
 //     marginRight: "auto",
 //     marginBottom: 33,
